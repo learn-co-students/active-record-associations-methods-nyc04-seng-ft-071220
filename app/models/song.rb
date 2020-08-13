@@ -14,8 +14,8 @@ class Song < ActiveRecord::Base
     if drake 
       drake.songs << self
     else
-       drake = Artist.create(name: "Drake")
-       drake.songs << self
+      drake = Artist.create(name: "Drake")
+      drake.songs << self
     end
     # binding.pry
   end
