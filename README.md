@@ -16,6 +16,8 @@ coded for `Songs`, `Genres`, and `Artists`. These associations look like this:
 - A genre has many songs.
 - A genre has many artists through songs.
 
+Artist -< Song >- Genre
+
 You may recall that by writing a few migrations and making use of the
 appropriate Active Record macros, we will be able to:
 
